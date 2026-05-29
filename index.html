@@ -161,91 +161,116 @@
     gap:2px !important;
 }
 .culture-wrapper{
-    position:relative;
-    display:flex;
-    align-items:center;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .culture-slider{
-    display:flex;
-    gap:25px;
-    overflow-x:auto;
-    scroll-behavior:smooth;
-    padding:20px 10px;
-    scrollbar-width:none;
+    display: flex;
+    gap: 25px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 10px;
+    scrollbar-width: none;
+
+    /* agar tinggi card sama */
+    align-items: stretch;
 }
 
 .culture-slider::-webkit-scrollbar{
-    display:none;
+    display: none;
 }
 
 .culture-card{
-    min-width:320px;
-    max-width:320px;
-    background:white;
-    border-radius:25px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.3s;
-    flex-shrink:0;
+    min-width: 320px;
+    max-width: 320px;
+    min-height: 430px;
+
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+    transition: 0.3s;
+    flex-shrink: 0;
+
+    /* isi card fleksibel */
+    display: flex;
+    flex-direction: column;
 }
 
 .culture-card:hover{
-    transform:translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .active-card{
-    transform:scale(1.03);
+    transform: scale(1.03);
 }
 
 .culture-img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
 }
 
 .culture-content{
-    padding:20px;
-    text-align:center;
+    padding: 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .culture-content h5{
-    color:#0b3a82;
-    font-weight:700;
-    margin-bottom:10px;
+    color: #0b3a82;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+    /* tinggi judul sama */
+    min-height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .culture-content p{
-    font-size:14px;
-    color:#666;
-    margin-bottom:0;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 1.6;
+
+    /* teks mengisi sisa ruang */
+    flex-grow: 1;
 }
 
 /* BUTTON */
 
 .slider-btn{
-    width:45px;
-    height:45px;
-    border:none;
-    border-radius:50%;
-    background:#0b3a82;
-    color:white;
-    font-size:22px;
-    cursor:pointer;
-    z-index:10;
-    transition:0.3s;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #0b3a82;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
 }
 
 .slider-btn:hover{
-    background:#07214d;
+    background: #07214d;
 }
 
 .prev-btn{
-    margin-right:10px;
+    margin-right: 10px;
 }
 
 .next-btn{
-    margin-left:10px;
+    margin-left: 10px;
 }
 
 /* RESPONSIVE */
@@ -253,7 +278,13 @@
 @media(max-width:768px){
 
     .culture-card{
-        min-width:260px;
+        min-width: 260px;
+        max-width: 260px;
+        min-height: 400px;
+    }
+
+    .culture-img{
+        height: 190px;
     }
 
 }
