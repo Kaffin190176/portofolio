@@ -809,30 +809,62 @@
 
 </body>
 </html>
-
 <script>
 
-const slider =
-document.getElementById('cultureSlider');
+const slider = document.getElementById('cultureSlider');
 
+const scrollAmount = 345;
+
+// BUTTON NEXT
 document.querySelector('.next-btn')
 .addEventListener('click', () => {
 
     slider.scrollBy({
-        left:345,
-        behavior:'smooth'
+        left: scrollAmount,
+        behavior: 'smooth'
     });
 
 });
 
+// BUTTON PREV
 document.querySelector('.prev-btn')
 .addEventListener('click', () => {
 
     slider.scrollBy({
-        left:-345,
-        behavior:'smooth'
+        left: -scrollAmount,
+        behavior: 'smooth'
     });
 
 });
+
+// AUTO SLIDE INFINITE
+function autoSlide(){
+
+    // jika sudah mentok kanan
+    if(
+        slider.scrollLeft + slider.clientWidth
+        >= slider.scrollWidth - 5
+    ){
+
+        // kembali ke awal
+        slider.scrollTo({
+            left: 0,
+            behavior: 'smooth'
+        });
+
+    }else{
+
+        // lanjut geser
+        slider.scrollBy({
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+
+    }
+
+}
+
+// jalan setiap 5 detik
+setInterval(autoSlide, 5000);
 
 </script>
