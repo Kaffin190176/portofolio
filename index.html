@@ -159,8 +159,8 @@
 
 .navbar-nav{
     gap:2px !important;
-
-  .culture-wrapper{
+}
+ .culture-wrapper{
     position: relative;
     display: flex;
     align-items: center;
@@ -185,7 +185,7 @@
 
 .culture-card{
     width: 320px;
-    height: 410px; /* semua card sama */
+    height: 400px; /* semua card sama */
 
     background: white;
     border-radius: 25px;
@@ -196,6 +196,9 @@
     transition: 0.3s;
 
     flex: 0 0 auto;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .culture-card:hover{
@@ -213,8 +216,14 @@
 }
 
 .culture-content{
-    padding: 18px 18px 20px;
+    padding: 16px 18px;
     text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    flex: 1;
 }
 
 .culture-content h5{
@@ -222,7 +231,7 @@
     font-weight: 700;
     font-size: 20px;
 
-    margin-bottom: 8px; /* lebih dekat */
+    margin-bottom: 6px; /* lebih dekat */
     line-height: 1.3;
 }
 
@@ -230,7 +239,7 @@
     font-size: 14px;
     color: #666;
 
-    margin-bottom: 0;
+    margin: 0;
     line-height: 1.5;
 }
 
@@ -273,15 +282,19 @@
 
     .culture-card{
         width: 260px;
-        height: 380px;
+        height: 370px;
     }
 
     .culture-img{
-        height: 190px;
+        height: 180px;
     }
 
     .culture-content h5{
         font-size: 18px;
+    }
+
+    .culture-content p{
+        font-size: 13px;
     }
 
 }
