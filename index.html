@@ -160,6 +160,37 @@
 .navbar-nav{
     gap:2px !important;
 }
+.carousel-img{
+    height:320px;
+    object-fit:cover;
+}
+
+.carousel-full{
+    height:420px;
+    object-fit:cover;
+}
+
+.carousel-caption-custom{
+    background:white;
+    padding:25px;
+    text-align:center;
+}
+
+.carousel-caption-custom h5{
+    color:#0b3a82;
+}
+
+.carousel-caption-custom p{
+    color:#555;
+    line-height:1.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color:rgba(0,0,0,0.5);
+    border-radius:50%;
+    padding:18px;
+}
 
   </style>
   <!DOCTYPE html>
@@ -167,7 +198,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <title>E-Portfolio PPL Terbimbing</title>
 
   <!-- BOOTSTRAP -->
@@ -406,7 +437,163 @@
         <div class="card border-0 shadow-sm rounded-4 mb-4">
 
             <div class="card-body p-4 p-lg-5">
+<!-- KAROSEL BUDAYA GRESIK -->
 
+<div id="gresikCarousel"
+     class="carousel slide mt-5"
+     data-bs-ride="carousel">
+
+    <!-- INDICATOR -->
+
+    <div class="carousel-indicators">
+
+        <button type="button"
+                data-bs-target="#gresikCarousel"
+                data-bs-slide-to="0"
+                class="active">
+        </button>
+
+        <button type="button"
+                data-bs-target="#gresikCarousel"
+                data-bs-slide-to="1">
+        </button>
+
+        <button type="button"
+                data-bs-target="#gresikCarousel"
+                data-bs-slide-to="2">
+        </button>
+
+    </div>
+
+    <!-- ITEM -->
+
+    <div class="carousel-inner rounded-4 shadow-sm">
+
+        <!-- SLIDE 1 -->
+
+        <div class="carousel-item active">
+
+            <div class="row g-0">
+
+                <div class="col-md-4">
+                    <img src="krawu.png"
+                         class="d-block w-100 carousel-img"
+                         alt="Nasi Krawu">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="pudak.png"
+                         class="d-block w-100 carousel-img"
+                         alt="Pudak">
+                </div>
+
+                <div class="col-md-4">
+                    <img src="damarkurung.png"
+                         class="d-block w-100 carousel-img"
+                         alt="Damar Kurung">
+                </div>
+
+            </div>
+
+            <div class="carousel-caption-custom">
+
+                <h5 class="fw-bold">
+                    Kuliner dan Budaya Khas Gresik
+                </h5>
+
+                <p class="mb-0">
+                    Nasi Krawu, Pudak, dan Damar Kurung merupakan
+                    identitas budaya khas Kabupaten Gresik yang
+                    mencerminkan kekayaan tradisi lokal.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- SLIDE 2 -->
+
+        <div class="carousel-item">
+
+            <div class="row g-0">
+
+                <div class="col-md-6">
+                    <img src="Makam Sunan Giri.png"
+                         class="d-block w-100 carousel-img"
+                         alt="Makam Sunan Giri">
+                </div>
+
+                <div class="col-md-6">
+                    <img src="MMaulana Malik Ibrahim.png"
+                         class="d-block w-100 carousel-img"
+                         alt="Makam Maulana Malik Ibrahim">
+                </div>
+
+            </div>
+
+            <div class="carousel-caption-custom">
+
+                <h5 class="fw-bold">
+                    Wisata Religi Gresik
+                </h5>
+
+                <p class="mb-0">
+                    Gresik dikenal sebagai kota santri yang memiliki
+                    sejarah kuat dalam penyebaran agama Islam melalui
+                    para wali dan tokoh ulama besar.
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- SLIDE 3 -->
+
+        <div class="carousel-item">
+
+            <img src="Gardu Suring.png"
+                 class="d-block w-100 carousel-full"
+                 alt="Gardu Suring">
+
+            <div class="carousel-caption-custom">
+
+                <h5 class="fw-bold">
+                    Ikon Kota Gresik
+                </h5>
+
+                <p class="mb-0">
+                    Gardu Suring menjadi salah satu ikon modern
+                    Kabupaten Gresik yang mencerminkan perkembangan
+                    kota yang tetap berpadu dengan budaya lokal.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- BUTTON -->
+
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#gresikCarousel"
+            data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#gresikCarousel"
+            data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
                 <h3 class="fw-bold text-primary mb-4">
                     B. Cerita Daerah Asal
                 </h3>
