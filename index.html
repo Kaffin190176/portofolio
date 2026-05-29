@@ -160,13 +160,42 @@
 .navbar-nav{
     gap:2px !important;
 }
+.culture-wrapper{
+    position:relative;
+    display:flex;
+    align-items:center;
+}
+
+.culture-slider{
+    display:flex;
+    gap:25px;
+    overflow-x:auto;
+    scroll-behavior:smooth;
+    padding:20px 10px;
+    scrollbar-width:none;
+}
+
+.culture-slider::-webkit-scrollbar{
+    display:none;
+}
 
 .culture-card{
+    min-width:320px;
+    max-width:320px;
     background:white;
     border-radius:25px;
     overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.4s;
+    transition:0.3s;
+    flex-shrink:0;
+}
+
+.culture-card:hover{
+    transform:translateY(-5px);
+}
+
+.active-card{
+    transform:scale(1.03);
 }
 
 .culture-img{
@@ -180,7 +209,6 @@
     text-align:center;
 }
 
-.culture-content h4,
 .culture-content h5{
     color:#0b3a82;
     font-weight:700;
@@ -188,38 +216,47 @@
 }
 
 .culture-content p{
-    color:#666;
     font-size:14px;
+    color:#666;
     margin-bottom:0;
-}
-
-/* CARD TENGAH */
-
-.active-card{
-    transform:scale(1.05);
-    box-shadow:0 15px 35px rgba(0,0,0,0.15);
-}
-
-.active-img{
-    height:260px;
-}
-
-/* CARD SAMPING */
-
-.side-card{
-    opacity:0.85;
-    margin-top:30px;
 }
 
 /* BUTTON */
 
-.carousel-control-prev-icon,
-.carousel-control-next-icon{
-    background-color:rgba(0,0,0,0.5);
+.slider-btn{
+    width:45px;
+    height:45px;
+    border:none;
     border-radius:50%;
-    padding:20px;
+    background:#0b3a82;
+    color:white;
+    font-size:22px;
+    cursor:pointer;
+    z-index:10;
+    transition:0.3s;
 }
 
+.slider-btn:hover{
+    background:#07214d;
+}
+
+.prev-btn{
+    margin-right:10px;
+}
+
+.next-btn{
+    margin-left:10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .culture-card{
+        min-width:260px;
+    }
+
+}
   </style>
   <!DOCTYPE html>
 <html lang="id">
@@ -489,178 +526,105 @@
                     belajar dan berkembang menjadi pribadi yang bermanfaat
                     bagi orang lain.
                 </p>
-<!-- SLIDER BUDAYA GRESIK -->
+<!-- CULTURE SLIDER -->
 
-<div class="position-relative mt-5">
+<div class="culture-wrapper mt-5">
 
-    <div id="cultureCarousel"
-         class="carousel slide"
-         data-bs-ride="carousel">
+    <button class="slider-btn prev-btn">
+        &#10094;
+    </button>
 
-        <div class="carousel-inner">
+    <div class="culture-slider" id="cultureSlider">
 
-            <!-- SLIDE 1 -->
+        <!-- CARD 1 -->
+        <div class="culture-card active-card">
 
-            <div class="carousel-item active">
+            <img src="krawu.png"
+                 alt="Krawu"
+                 class="culture-img">
 
-                <div class="row justify-content-center g-4">
-
-                    <!-- CARD 1 -->
-                    <div class="col-lg-3">
-
-                        <div class="culture-card side-card">
-
-                            <img src="krawu.png"
-                                 class="culture-img"
-                                 alt="Krawu">
-
-                            <div class="culture-content">
-                                <h5>Nasi Krawu</h5>
-                                <p>Kuliner khas Gresik.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- CARD 2 TENGAH -->
-                    <div class="col-lg-4">
-
-                        <div class="culture-card active-card">
-
-                            <img src="pudak.png"
-                                 class="culture-img active-img"
-                                 alt="Pudak">
-
-                            <div class="culture-content">
-                                <h4>Pudak Gresik</h4>
-
-                                <p>
-                                    Makanan tradisional khas Gresik
-                                    berbahan santan dan tepung dengan
-                                    cita rasa manis khas.
-                                </p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- CARD 3 -->
-                    <div class="col-lg-3">
-
-                        <div class="culture-card side-card">
-
-                            <img src="damarkurung.png"
-                                 class="culture-img"
-                                 alt="Damar Kurung">
-
-                            <div class="culture-content">
-                                <h5>Damar Kurung</h5>
-                                <p>Budaya lampion khas Gresik.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- SLIDE 2 -->
-
-            <div class="carousel-item">
-
-                <div class="row justify-content-center g-4">
-
-                    <!-- CARD 1 -->
-                    <div class="col-lg-3">
-
-                        <div class="culture-card side-card">
-
-                            <img src="sunangiri.png"
-                                 class="culture-img"
-                                 alt="Sunan Giri">
-
-                            <div class="culture-content">
-                                <h5>Sunan Giri</h5>
-                                <p>Wisata religi terkenal.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- CARD TENGAH -->
-                    <div class="col-lg-4">
-
-                        <div class="culture-card active-card">
-
-                            <img src="sunangresik.png"
-                                 class="culture-img active-img"
-                                 alt="Maulana Malik Ibrahim">
-
-                            <div class="culture-content">
-
-                                <h4>Maulana Malik Ibrahim</h4>
-
-                                <p>
-                                    Tokoh penting penyebaran Islam
-                                    di Gresik dan bagian sejarah wali.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <!-- CARD 3 -->
-                    <div class="col-lg-3">
-
-                        <div class="culture-card side-card">
-
-                            <img src="Gardu Suring.png"
-                                 class="culture-img"
-                                 alt="Gardu Suring">
-
-                            <div class="culture-content">
-                                <h5>Gardu Suring</h5>
-                                <p>Ikon modern Kabupaten Gresik.</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
+            <div class="culture-content">
+                <h5>Nasi Krawu</h5>
+                <p>Kuliner khas Kabupaten Gresik.</p>
             </div>
 
         </div>
 
-        <!-- BUTTON -->
+        <!-- CARD 2 -->
+        <div class="culture-card">
 
-        <button class="carousel-control-prev"
-                type="button"
-                data-bs-target="#cultureCarousel"
-                data-bs-slide="prev">
+            <img src="pudak.png"
+                 alt="Pudak"
+                 class="culture-img">
 
-            <span class="carousel-control-prev-icon"></span>
+            <div class="culture-content">
+                <h5>Pudak Gresik</h5>
+                <p>Makanan tradisional khas Gresik.</p>
+            </div>
 
-        </button>
+        </div>
 
-        <button class="carousel-control-next"
-                type="button"
-                data-bs-target="#cultureCarousel"
-                data-bs-slide="next">
+        <!-- CARD 3 -->
+        <div class="culture-card">
 
-            <span class="carousel-control-next-icon"></span>
+            <img src="damarkurung.png"
+                 alt="Damar Kurung"
+                 class="culture-img">
 
-        </button>
+            <div class="culture-content">
+                <h5>Damar Kurung</h5>
+                <p>Kesenian lampion khas Gresik.</p>
+            </div>
+
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="culture-card">
+
+            <img src="sunangiri.png"
+                 alt="Sunan Giri"
+                 class="culture-img">
+
+            <div class="culture-content">
+                <h5>Sunan Giri</h5>
+                <p>Wisata religi terkenal di Gresik.</p>
+            </div>
+
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="culture-card">
+
+            <img src="sunangresik.png"
+                 alt="Maulana Malik Ibrahim"
+                 class="culture-img">
+
+            <div class="culture-content">
+                <h5>Maulana Malik Ibrahim</h5>
+                <p>Tokoh penting penyebaran Islam.</p>
+            </div>
+
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="culture-card">
+
+            <img src="Gardu Suring.png"
+                 alt="Gardu Suring"
+                 class="culture-img">
+
+            <div class="culture-content">
+                <h5>Gardu Suring</h5>
+                <p>Ikon modern Kabupaten Gresik.</p>
+            </div>
+
+        </div>
 
     </div>
+
+    <button class="slider-btn next-btn">
+        &#10095;
+    </button>
 
 </div>
                 <!-- NILAI -->
@@ -844,15 +808,26 @@
 
 <script>
 
-const cultureCarousel =
-document.querySelector('#cultureCarousel');
+const slider =
+document.getElementById('cultureSlider');
 
-new bootstrap.Carousel(cultureCarousel, {
+document.querySelector('.next-btn')
+.addEventListener('click', () => {
 
-    interval:3000,
-    pause:false,
-    touch:true,
-    wrap:true
+    slider.scrollBy({
+        left:345,
+        behavior:'smooth'
+    });
+
+});
+
+document.querySelector('.prev-btn')
+.addEventListener('click', () => {
+
+    slider.scrollBy({
+        left:-345,
+        behavior:'smooth'
+    });
 
 });
 
