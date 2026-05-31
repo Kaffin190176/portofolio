@@ -15,35 +15,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="style.css">
 
-    <style>
-        .artefak-header h1{
-    color: #07214d;
-    font-weight: 700;
-}
 
-        .artefak-header p{
-            color: #4f5d75;
-            max-width: 700px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .dashboard-card{
-            background:#fff;
-            border-radius:20px;
-            box-shadow:0 5px 20px rgba(0,0,0,.08);
-            overflow:hidden;
-        }
-
-        .resource-item{
-            transition:.3s;
-        }
-
-        .resource-item:hover{
-            transform:translateY(-3px);
-            box-shadow:0 5px 15px rgba(0,0,0,.08);
-        }
-    </style>
 </head>
 
 <body>
@@ -54,6 +26,7 @@
 <!-- HERO -->
 <section class="artefak-header">
     <div class="container">
+        <br>
         <h1 class="fw-bold">Artefak Pembelajaran</h1>
         <p class="mb-0">
             Kumpulan materi, media pembelajaran, video, dan evaluasi yang digunakan selama kegiatan PPL.
@@ -74,11 +47,36 @@
                         data-bs-toggle="collapse"
                         data-bs-target="#bab1">
 
-                    <span>📚 BAB 1 - Analisis Data</span>
+                    <h3>📚 BAB 1 - Analisis Data</h3>
                     <i class="bi bi-chevron-down"></i>
 
                 </button>
+                <div class=" rounded p-3 mb-3">
+                    <!-- PDF -->
+                                <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
 
+                                    <div class="d-flex gap-3 align-items-center">
+
+                                        <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                                        <div>
+                                            <div class="fw-bold">
+                                                PDF Materi Pecahan
+                                            </div>
+
+                                            <small class="text-muted">
+                                                Materi lengkap dalam bentuk PDF
+                                            </small>
+                                        </div>
+
+                                    </div>
+
+                                    <a href="file/Modul Ajar Informatika Kelas X SMA Fase E Bab 6.pdf" class="btn btn-outline-primary btn-sm">
+                                        Buka PDF
+                                    </a>
+
+                                </div>
+                </div>
                 <div id="bab1" class="collapse show px-3 pb-3">
 
                     <!-- MATERI 1 -->
