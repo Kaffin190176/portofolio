@@ -20,7 +20,14 @@
 <body>
 
   <!-- NAVBAR -->
-<?php include 'navbar.html'; ?>
+   <div id="navbar"></div>
+<script>
+fetch('navbar.html')
+.then(res => res.text())
+.then(data => {
+    document.getElementById('navbar').innerHTML = data;
+});
+</script>
 </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
