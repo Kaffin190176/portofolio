@@ -115,7 +115,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#bab1">
 
-            <h3 class="mb-0 fw-bold">📚 BAB 1 - Analisis Data</h3>
+            <h4 class="mb-0 fw-bold">📚 BAB 1 - Analisis Data</h4>
 
             <i class="bi bi-chevron-down"></i>
 
@@ -438,7 +438,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#bab2">
 
-            <h3 class="mb-0 fw-bold">📚 BAB 1 - Analisis Data</h3>
+            <h4 class="mb-0 fw-bold">📚 BAB 1 - Analisis Data</h4>
 
             <i class="bi bi-chevron-down"></i>
 
@@ -751,40 +751,315 @@
 
 </div>
 
+<!-- BAB 3 -->
+<div class="dashboard-card mb-4">
 
+    <div class="card-body p-0">
 
+        <!-- HEADER BAB -->
+        <button class="btn w-100 text-start p-3 fw-bold d-flex justify-content-between align-items-center"
+                data-bs-toggle="collapse"
+                data-bs-target="#bab3">
 
-        <!-- BAB 2 -->
-        <div class="dashboard-card">
+            <h4 class="mb-0 fw-bold">📚 BAB 1 - Analisis Data</h4>
 
-            <div class="card-body p-0">
+            <i class="bi bi-chevron-down"></i>
 
-                <button class="btn w-100 text-start p-3 fw-bold d-flex justify-content-between align-items-center"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#bab2">
+        </button>
 
-                    <span>📖 BAB 2 - Rasio dan Proporsi</span>
+        <!-- CONTENT BAB -->
+        <div id="bab3" class="collapse px-3 pb-3">
 
-                    <i class="bi bi-chevron-down"></i>
+            <!-- MODUL AJAR -->
+            <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center mb-3">
+
+                <div class="d-flex gap-3 align-items-center">
+
+                    <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                    <div>
+                        <div class="fw-bold">
+                            Modul Ajar Analisis Data
+                        </div>
+
+                        <small class="text-muted">
+                            Materi lengkap dalam bentuk PDF
+                        </small>
+                    </div>
+
+                </div>
+
+                <button class="btn btn-outline-primary btn-sm"
+                        data-pdf="file/analisis data/analisisdata.pdf"
+                        data-bs-toggle="modal"
+                        data-bs-target="#pdfModal">
+
+                    Buka PDF
 
                 </button>
 
-                <div id="bab2" class="collapse px-3 pb-3">
+            </div>
 
-                    <div class="border rounded p-3 mt-3">
+            <!-- MATERI 1 -->
+            <div class="border rounded p-3 mb-3">
 
-                        <button class="btn w-100 text-start fw-semibold"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#materi21">
+                <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#materi1">
 
-                            Konsep Rasio
+                    <span>
+                        Pertemuan 1 - Pengenalan Data dan Perkakas Analisis Data
+                    </span>
 
-                        </button>
+                    <i class="bi bi-caret-down-fill"></i>
 
-                        <div id="materi21" class="collapse mt-3">
-                            <p class="text-muted">
-                                Tambahkan PDF, PPT, Video, dan Quiz.
-                            </p>
+                </button>
+
+                <div id="materi1" class="collapse  mt-3">
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- PPT -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        PPT - Pengenalan Data dan Perkakas Analisis Data
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Slide pembelajaran
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-success btn-sm open-ppt"
+                                    data-title="Pengenalan Data dan Perkakas Analisis Data"
+                                    data-ppt="https://kaffin190176.github.io/portofolio/file/analisis data/Pertemuan 1 - Pengenalan Data dan Perkakas Analisis Data.pptx"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pptModal">
+
+                                Lihat PPT
+
+                            </button>
+
+                        </div>
+
+                        <!-- LKPD -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        LKPD - Pengenalan Data dan Perkakas Analisis Data
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Lembar Kerja Peserta Didik
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-primary btn-sm"
+                                    data-pdf="file/analisis data/LKPD - Pengenalan Data dan Perkakas Analisis Data.pdf"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pdfModal">
+
+                                Buka PDF
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MATERI 2 -->
+            <div class="border rounded p-3 mb-3">
+
+                <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#materi2">
+
+                    <span>
+                        Pertemuan 2 - Dasar dan Perhitungan Data dengan Python
+                    </span>
+
+                    <i class="bi bi-caret-down-fill"></i>
+
+                </button>
+
+                <div id="materi2" class="collapse  mt-3">
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- PPT -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        PPT - Dasar dan Perhitungan Data dengan Python
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Slide pembelajaran
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-success btn-sm open-ppt"
+                                    data-title="Dasar dan Perhitungan Data dengan Python"
+                                    data-ppt="https://kaffin190176.github.io/portofolio/file/analisis data/Pertemuan 2 - Dasar dan Perhitungan Data dengan Python.pptx"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pptModal">
+
+                                Lihat PPT
+
+                            </button>
+
+                        </div>
+                        <!-- LKPD -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        LKPD - Dasar dan Perhitungan Data dengan Python
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Lembar Kerja Peserta Didik
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-primary btn-sm"
+                                    data-pdf="file/analisis data/LKPD - Dasar dan Perhitungan Data dengan Python.pdf"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pdfModal">
+
+                                Buka PDF
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MATERI 3 -->
+            <div class="border rounded p-3 mb-3">
+
+                <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#materi3">
+
+                    <span>
+                        Pertemuan 3 - Koleksi dan Visualisasi Data
+                    </span>
+
+                    <i class="bi bi-caret-down-fill"></i>
+
+                </button>
+
+                <div id="materi3" class="collapse  mt-3">
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- PPT -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        PPT - Koleksi dan Visualisasi Data
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Slide pembelajaran
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-success btn-sm open-ppt"
+                                    data-title="Koleksi dan Visualisasi Data"
+                                    data-ppt="https://kaffin190176.github.io/portofolio/file/analisis data/Pertemuan 3 - Koleksi dan Visualisasi Data.pptx"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pptModal">
+
+                                Lihat PPT
+
+                            </button>
+
+                        </div>
+                        <!-- LKPD -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        LKPD - Pengenalan Data dan Perkakas Analisis Data
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Lembar Kerja Peserta Didik
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-primary btn-sm"
+                                    data-pdf="file/analisis data/LKPD - Pengenalan Data dan Perkakas Analisis Data.pdf"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pdfModal">
+
+                                Buka PDF
+
+                            </button>
+
                         </div>
 
                     </div>
@@ -794,6 +1069,343 @@
             </div>
 
         </div>
+
+    </div>
+
+</div>
+
+
+<!-- BAB 4 -->
+<div class="dashboard-card mb-4">
+
+    <div class="card-body p-0">
+
+        <!-- HEADER BAB -->
+        <button class="btn w-100 text-start p-3 fw-bold d-flex justify-content-between align-items-center"
+                data-bs-toggle="collapse"
+                data-bs-target="#bab4">
+
+            <h4 class="mb-0 fw-bold">📚 BAB 1 - Analisis Data</h4>
+
+            <i class="bi bi-chevron-down"></i>
+
+        </button>
+
+        <!-- CONTENT BAB -->
+        <div id="bab4" class="collapse px-3 pb-3">
+
+            <!-- MODUL AJAR -->
+            <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center mb-3">
+
+                <div class="d-flex gap-3 align-items-center">
+
+                    <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                    <div>
+                        <div class="fw-bold">
+                            Modul Ajar Analisis Data
+                        </div>
+
+                        <small class="text-muted">
+                            Materi lengkap dalam bentuk PDF
+                        </small>
+                    </div>
+
+                </div>
+
+                <button class="btn btn-outline-primary btn-sm"
+                        data-pdf="file/analisis data/analisisdata.pdf"
+                        data-bs-toggle="modal"
+                        data-bs-target="#pdfModal">
+
+                    Buka PDF
+
+                </button>
+
+            </div>
+
+            <!-- MATERI 1 -->
+            <div class="border rounded p-3 mb-3">
+
+                <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#materi1">
+
+                    <span>
+                        Pertemuan 1 - Pengenalan Data dan Perkakas Analisis Data
+                    </span>
+
+                    <i class="bi bi-caret-down-fill"></i>
+
+                </button>
+
+                <div id="materi1" class="collapse  mt-3">
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- PPT -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        PPT - Pengenalan Data dan Perkakas Analisis Data
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Slide pembelajaran
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-success btn-sm open-ppt"
+                                    data-title="Pengenalan Data dan Perkakas Analisis Data"
+                                    data-ppt="https://kaffin190176.github.io/portofolio/file/analisis data/Pertemuan 1 - Pengenalan Data dan Perkakas Analisis Data.pptx"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pptModal">
+
+                                Lihat PPT
+
+                            </button>
+
+                        </div>
+
+                        <!-- LKPD -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        LKPD - Pengenalan Data dan Perkakas Analisis Data
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Lembar Kerja Peserta Didik
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-primary btn-sm"
+                                    data-pdf="file/analisis data/LKPD - Pengenalan Data dan Perkakas Analisis Data.pdf"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pdfModal">
+
+                                Buka PDF
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MATERI 2 -->
+            <div class="border rounded p-3 mb-3">
+
+                <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#materi2">
+
+                    <span>
+                        Pertemuan 2 - Dasar dan Perhitungan Data dengan Python
+                    </span>
+
+                    <i class="bi bi-caret-down-fill"></i>
+
+                </button>
+
+                <div id="materi2" class="collapse  mt-3">
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- PPT -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        PPT - Dasar dan Perhitungan Data dengan Python
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Slide pembelajaran
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-success btn-sm open-ppt"
+                                    data-title="Dasar dan Perhitungan Data dengan Python"
+                                    data-ppt="https://kaffin190176.github.io/portofolio/file/analisis data/Pertemuan 2 - Dasar dan Perhitungan Data dengan Python.pptx"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pptModal">
+
+                                Lihat PPT
+
+                            </button>
+
+                        </div>
+                        <!-- LKPD -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        LKPD - Dasar dan Perhitungan Data dengan Python
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Lembar Kerja Peserta Didik
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-primary btn-sm"
+                                    data-pdf="file/analisis data/LKPD - Dasar dan Perhitungan Data dengan Python.pdf"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pdfModal">
+
+                                Buka PDF
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- MATERI 3 -->
+            <div class="border rounded p-3 mb-3">
+
+                <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#materi3">
+
+                    <span>
+                        Pertemuan 3 - Koleksi dan Visualisasi Data
+                    </span>
+
+                    <i class="bi bi-caret-down-fill"></i>
+
+                </button>
+
+                <div id="materi3" class="collapse  mt-3">
+
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- PPT -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        PPT - Koleksi dan Visualisasi Data
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Slide pembelajaran
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-success btn-sm open-ppt"
+                                    data-title="Koleksi dan Visualisasi Data"
+                                    data-ppt="https://kaffin190176.github.io/portofolio/file/analisis data/Pertemuan 3 - Koleksi dan Visualisasi Data.pptx"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pptModal">
+
+                                Lihat PPT
+
+                            </button>
+
+                        </div>
+                        <!-- LKPD -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        LKPD - Pengenalan Data dan Perkakas Analisis Data
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Lembar Kerja Peserta Didik
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-primary btn-sm"
+                                    data-pdf="file/analisis data/LKPD - Pengenalan Data dan Perkakas Analisis Data.pdf"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pdfModal">
+
+                                Buka PDF
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+     
+
+
+
+
+
 
     </div>
 </section>
