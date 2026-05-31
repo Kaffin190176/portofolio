@@ -125,40 +125,14 @@
                                 data-bs-toggle="collapse"
                                 data-bs-target="#materi1">
 
-                            Pecahan dan Desimal
+                            Pengenalan Data dan Perkakas Analisis Data.
                             <i class="bi bi-caret-down-fill"></i>
 
                         </button>
 
                         <div id="materi1" class="collapse show mt-3">
 
-                            <div class="d-flex flex-column gap-3">
-
-                                <!-- PDF -->
-                                <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
-
-                                    <div class="d-flex gap-3 align-items-center">
-
-                                        <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
-
-                                        <div>
-                                            <div class="fw-bold">
-                                                PDF Materi Pecahan
-                                            </div>
-
-                                            <small class="text-muted">
-                                                Materi lengkap dalam bentuk PDF
-                                            </small>
-                                        </div>
-
-                                    </div>
-
-                                    <a href="#" class="btn btn-outline-primary btn-sm">
-                                        Buka PDF
-                                    </a>
-
-                                </div>
-
+                            <div class="d-flex flex-column gap-3">            
                                 <!-- PPT -->
                                 <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
 
@@ -168,7 +142,7 @@
 
                                         <div>
                                             <div class="fw-bold">
-                                                PPT Materi Pecahan
+                                                Materi Pengenalan Data dan Perkakas Analisis Data.
                                             </div>
 
                                             <small class="text-muted">
@@ -178,9 +152,13 @@
 
                                     </div>
 
-                                    <a href="#" class="btn btn-outline-success btn-sm">
+                                    <button class="btn btn-outline-success btn-sm open-ppt"
+                                            data-title="PPT Bab 1"
+                                            data-ppt="file/ppt-pengenalan-data.pptx"
+                                            data-bs-toggle="modal"
+                                            data-bs-target="#pptModal">
                                         Lihat PPT
-                                    </a>
+                                    </button>
 
                                 </div>
 
@@ -350,9 +328,27 @@ fetch('footer.html')
 .then(data => {
     document.getElementById('footer').innerHTML = data;
 });
+
+document.querySelectorAll('.open-ppt').forEach(btn => {
+
+    btn.addEventListener('click', function(){
+
+        let pptUrl = window.location.origin + '/' + this.dataset.ppt;
+
+        document.getElementById('pptFrame').src =
+        'https://view.officeapps.live.com/op/embed.aspx?src='
+        + encodeURIComponent(pptUrl);
+
+        document.getElementById('pptTitle').textContent =
+        this.dataset.title;
+
+    });
+
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
+
