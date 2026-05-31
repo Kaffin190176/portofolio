@@ -194,7 +194,7 @@
 
                                     <button class="btn btn-outline-success btn-sm open-ppt"
                                             data-title="PPT Bab 1"
-                                            data-ppt="file/ppt-pengenalan-data.pptx"
+                                            data-ppt="https://kaffin190176.github.io/portofolio/file/ppt-pengenalan-data.pptx.pptx"
                                             data-bs-toggle="modal"
                                             data-bs-target="#pptModal">
                                         Lihat PPT
@@ -369,18 +369,18 @@ fetch('footer.html')
     document.getElementById('footer').innerHTML = data;
 });
 
-document.querySelectorAll('.open-ppt').forEach(btn => {
+document.querySelectorAll('.open-ppt').forEach(button => {
 
-    btn.addEventListener('click', function(){
+    button.addEventListener('click', function () {
 
-        let pptUrl = window.location.origin + '/' + this.dataset.ppt;
+        const pptUrl = this.dataset.ppt;
 
         document.getElementById('pptFrame').src =
-        'https://view.officeapps.live.com/op/embed.aspx?src='
-        + encodeURIComponent(pptUrl);
+            'https://view.officeapps.live.com/op/embed.aspx?src=' +
+            encodeURIComponent(pptUrl);
 
         document.getElementById('pptTitle').textContent =
-        this.dataset.title;
+            this.dataset.title;
 
     });
 
