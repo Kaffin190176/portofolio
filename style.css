@@ -6,8 +6,18 @@
     body{
       background:#f4f7fc;
       color:#1b1b1b;
+      height:100%;
+    margin:0;
     }
+    body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
 
+    main{
+    flex:1;
+}
     /* NAVBAR */
 
     .navbar{
@@ -308,6 +318,7 @@
 .footer-list strong{
     color: white;
 }
+
  .artefak-header h1{
     color: #07214d;
     font-weight: 700;
