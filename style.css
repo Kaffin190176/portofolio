@@ -50,11 +50,53 @@ footer{
       font-weight:500;
       transition:0.3s;
     }
+    .navbar-brand small{
+    font-size: 0.65rem;
+    opacity: 0.85;
+}
 
     .nav-link:hover{
       color:#8db8ff !important;
     }
+/* Mobile */
+@media (max-width: 991.98px){
 
+    .navbar-brand h5{
+        font-size: 1rem;
+    }
+
+    .navbar-brand span{
+        font-size: 0.75rem;
+    }
+
+    .navbar-brand img{
+        width: 45px;
+    }
+
+    .navbar-collapse{
+        margin-top: 15px;
+        background: #07214d;
+        border-radius: 12px;
+        padding: 10px;
+    }
+
+    .navbar-nav{
+        gap: 0 !important;
+    }
+
+    .nav-item{
+        width: 100%;
+    }
+
+    .nav-link{
+        padding: 12px 15px;
+        border-radius: 8px;
+    }
+
+    .nav-link:hover{
+        background: rgba(255,255,255,0.1);
+    }
+}
     /* HERO */
 
     .hero{
