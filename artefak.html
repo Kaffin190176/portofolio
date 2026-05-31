@@ -51,44 +51,42 @@
                     <i class="bi bi-chevron-down"></i>
 
                 </button>
-                <div class="modal fade"
-     id="pdfModal"
-     tabindex="-1"
-     aria-hidden="true">
 
-    <div class="modal-dialog modal-xl modal-dialog-centered">
+                <!-- fademodel -->
+    <div class="modal fade" id="pdfModal" tabindex="-1">
 
-        <div class="modal-content">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
 
-            <div class="modal-header">
+            <div class="modal-content">
 
-                <h5 class="modal-title">
-                    Modul Ajar Informatika
-                </h5>
+                <div class="modal-header">
 
-                <button type="button"
-                        class="btn-close"
-                        data-bs-dismiss="modal">
-                </button>
+                    <h5 class="modal-title" id="pdfTitle">
+                        Preview PDF
+                    </h5>
 
-            </div>
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal">
+                    </button>
 
-            <div class="modal-body p-0">
+                </div>
 
-                <iframe
-                    src="file/modulinfor.pdf"
-                    width="100%"
-                    height="700"
-                    style="border:none;">
-                </iframe>
+                <div class="modal-body p-0">
+
+                    <iframe id="pdfFrame"
+                            width="100%"
+                            height="700"
+                            style="border:none;">
+                    </iframe>
+
+                </div>
 
             </div>
 
         </div>
 
     </div>
-
-</div>
                 <div class=" rounded p-3 mb-3">
                     <!-- PDF -->
                                 <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
@@ -110,6 +108,7 @@
                                     </div>
 
                                     <button class="btn btn-outline-primary btn-sm"
+                                            data-pdf="file/analisisdata.pdf"
                                             data-bs-toggle="modal"
                                             data-bs-target="#pdfModal">
                                         Buka PDF
