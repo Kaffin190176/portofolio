@@ -345,6 +345,26 @@ document.querySelectorAll('.open-ppt').forEach(btn => {
     });
 
 });
+
+document.querySelectorAll('[data-pdf]').forEach(button => {
+
+    button.addEventListener('click', function () {
+
+        const pdfFile = this.getAttribute('data-pdf');
+
+        document.getElementById('pdfFrame').src = pdfFile;
+
+    });
+
+});
+
+// Kosongkan iframe saat modal ditutup
+document.getElementById('pdfModal')
+.addEventListener('hidden.bs.modal', function () {
+
+    document.getElementById('pdfFrame').src = '';
+
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
