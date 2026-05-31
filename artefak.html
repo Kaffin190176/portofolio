@@ -33,26 +33,6 @@
         </p>
     </div>
 </section>
-
-<!-- CONTENT -->
-<section class="py-5">
-    <div class="container">
-
-        <!-- BAB 1 -->
-        <div class="dashboard-card mb-4">
-
-            <div class="card-body p-0">
-
-                <button class="btn w-100 text-start p-3 fw-bold d-flex justify-content-between align-items-center"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#bab1">
-
-                    <h3>📚 BAB 1 - Analisis Data</h3>
-                    <i class="bi bi-chevron-down"></i>
-
-                </button>
-
-                <!-- fademodel -->
     <div class="modal fade" id="pdfModal" tabindex="-1">
 
         <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -121,131 +101,167 @@
         </div>
 
     </div>
+<!-- CONTENT -->
+<section class="py-5">
+    <div class="container">
 
+<!-- BAB 1 -->
+<div class="dashboard-card mb-4">
 
+    <div class="card-body p-0">
 
-                <div class=" rounded p-3 mb-3">
-                    <!-- PDF -->
-                    <!-- modul ajar bab 1 -->
-                    <div id="bab1" class="collapse show px-3 pb-3">
+        <!-- HEADER BAB -->
+        <button class="btn w-100 text-start p-3 fw-bold d-flex justify-content-between align-items-center"
+                data-bs-toggle="collapse"
+                data-bs-target="#bab1">
 
-                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+            <h3 class="mb-0">📚 BAB 1 - Analisis Data</h3>
 
-                                        <div class="d-flex gap-3 align-items-center">
+            <i class="bi bi-chevron-down"></i>
 
-                                            <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
+        </button>
 
-                                            <div>
-                                                <div class="fw-bold">
-                                                    Modul Ajar Analisis Data
-                                                </div>
+        <!-- CONTENT BAB -->
+        <div id="bab1" class="collapse px-3 pb-3">
 
-                                                <small class="text-muted">
-                                                    Materi lengkap dalam bentuk PDF
-                                                </small>
-                                            </div>
+            <!-- MODUL AJAR -->
+            <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center mb-3">
 
-                                        </div>
+                <div class="d-flex gap-3 align-items-center">
 
-                                        <button class="btn btn-outline-primary btn-sm"
-                                                data-pdf="file/analisisdata.pdf"
-                                                data-bs-toggle="modal"
-                                                data-bs-target="#pdfModal">
-                                            Buka PDF
-                                        </button>
+                    <i class="bi bi-file-earmark-pdf-fill text-danger fs-2"></i>
 
-                                    </div>
+                    <div>
+                        <div class="fw-bold">
+                            Modul Ajar Analisis Data
+                        </div>
+
+                        <small class="text-muted">
+                            Materi lengkap dalam bentuk PDF
+                        </small>
                     </div>
 
+                </div>
 
-                    <!-- MATERI 1 -->
-                    <div class="border rounded p-3 mb-3">
+                <button class="btn btn-outline-primary btn-sm"
+                        data-pdf="file/analisisdata.pdf"
+                        data-bs-toggle="modal"
+                        data-bs-target="#pdfModal">
 
-                        <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#materi1">
+                    Buka PDF
 
-                            Pengenalan Data dan Perkakas Analisis Data.
-                            <i class="bi bi-caret-down-fill"></i>
+                </button>
 
-                        </button>
+            </div>
 
-                        <div id="materi1" class="collapse show mt-3">
+            <!-- MATERI 1 -->
+            <div class="border rounded p-3">
 
-                            <div class="d-flex flex-column gap-3">            
-                                <!-- PPT -->
-                                <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+                <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#materi1">
 
-                                    <div class="d-flex gap-3 align-items-center">
+                    <span>
+                        Pertemuan 1 - Materi Pengenalan Data dan Perkakas Analisis Data
+                    </span>
 
-                                        <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
+                    <i class="bi bi-caret-down-fill"></i>
 
-                                        <div>
-                                            <div class="fw-bold">
-                                                Materi Pengenalan Data dan Perkakas Analisis Data.
-                                            </div>
+                </button>
 
-                                            <small class="text-muted">
-                                                Slide pembelajaran
-                                            </small>
-                                        </div>
+                <div id="materi1" class="collapse  mt-3">
 
+                    <div class="d-flex flex-column gap-3">
+
+                        <!-- PPT -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
+
+                            <div class="d-flex gap-3 align-items-center">
+
+                                <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
+
+                                <div>
+
+                                    <div class="fw-bold">
+                                        PPT - Materi Pengenalan Data dan Perkakas Analisis Data
                                     </div>
 
-                                    <button class="btn btn-outline-success btn-sm open-ppt"
-                                            data-title="PPT Bab 1"
-                                            data-ppt="https://kaffin190176.github.io/portofolio/file/ppt-pengenalan-data.pptx.pptx"
-                                            data-bs-toggle="modal"
-                                            data-bs-target="#pptModal">
-                                        Lihat PPT
-                                    </button>
+                                    <small class="text-muted">
+                                        Slide pembelajaran
+                                    </small>
 
                                 </div>
 
                             </div>
 
+                            <button class="btn btn-outline-success btn-sm open-ppt"
+                                    data-title="PPT Bab 1"
+                                    data-ppt="https://kaffin190176.github.io/portofolio/file/ppt-pengenalan-data.pptx.pptx"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pptModal">
+
+                                Lihat PPT
+
+                            </button>
+
                         </div>
 
                     </div>
 
-                    <!-- MATERI 2 -->
-                    <div class="border rounded p-3 mb-3">
+                </div>
 
-                        <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#materi2">
+            </div>
 
-                            Bilangan Bulat Negatif
+            <!-- MATERI 2 -->
+            <div class="border rounded p-3">
 
-                            <i class="bi bi-caret-down-fill"></i>
+                <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#materi1">
 
-                        </button>
+                    <span>
+                        Pertemuan 2 - Dasar dan Perhitungan Data dengan Python
+                    </span>
 
-                        <div id="materi2" class="collapse mt-3">
-                            <p class="text-muted">
-                                Tambahkan PDF, PPT, Video, dan Quiz seperti materi pertama.
-                            </p>
-                        </div>
+                    <i class="bi bi-caret-down-fill"></i>
 
-                    </div>
+                </button>
 
-                    <!-- MATERI 3 -->
-                    <div class="border rounded p-3">
+                <div id="materi2" class="collapse  mt-3">
 
-                        <button class="btn w-100 text-start fw-semibold d-flex justify-content-between align-items-center"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#materi3">
+                    <div class="d-flex flex-column gap-3">
 
-                            Operasi Hitung Campuran
+                        <!-- PPT -->
+                        <div class="resource-item border rounded p-3 d-flex justify-content-between align-items-center">
 
-                            <i class="bi bi-caret-down-fill"></i>
+                            <div class="d-flex gap-3 align-items-center">
 
-                        </button>
+                                <i class="bi bi-file-earmark-slides-fill text-success fs-2"></i>
 
-                        <div id="materi3" class="collapse mt-3">
-                            <p class="text-muted">
-                                Tambahkan PDF, PPT, Video, dan Quiz seperti materi pertama.
-                            </p>
+                                <div>
+
+                                    <div class="fw-bold">
+                                        PPT - Dasar dan Perhitungan Data dengan Python
+                                    </div>
+
+                                    <small class="text-muted">
+                                        Slide pembelajaran
+                                    </small>
+
+                                </div>
+
+                            </div>
+
+                            <button class="btn btn-outline-success btn-sm open-ppt"
+                                    data-title="Dasar dan Perhitungan Data dengan Python"
+                                    data-ppt="https://kaffin190176.github.io/portofolio/file/dasar-dan-perhitungan-data-dengan-python.pptx"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#pptModal">
+
+                                Lihat PPT
+
+                            </button>
+
                         </div>
 
                     </div>
@@ -255,6 +271,15 @@
             </div>
 
         </div>
+
+    </div>
+
+</div>
+        
+
+
+
+
 
         <!-- BAB 2 -->
         <div class="dashboard-card">
