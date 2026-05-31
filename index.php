@@ -18,8 +18,9 @@
 
 </head>
 <body>
-<link href="navbar.html" rel="import" />
- 
+
+  <!-- NAVBAR -->
+<?php include 'navbar.html'; ?>
 </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
