@@ -1232,10 +1232,61 @@
 
 <section class="artefak-header py-5">
 
+    <style>
+        .analysis-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+            height: 100%;
+            transition: .3s;
+        }
+
+        .analysis-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .analysis-icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #eef4ff;
+            color: #0d6efd;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .analysis-card h5 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .analysis-card p,
+        .analysis-card li {
+            font-size: 0.95rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .analysis-card ul {
+            padding-left: 20px;
+            margin-bottom: 0;
+        }
+
+        .analysis-card .badge {
+            font-size: .8rem;
+            padding: 8px 12px;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+    </style>
+
     <div class="container">
 
         <div class="text-center mb-5">
-            <br>
             <h1 class="fw-bold">
                 Analisis Produk dan Perangkat Pembelajaran
             </h1>
@@ -1252,194 +1303,240 @@
 
             <!-- CARD 1 -->
             <div class="col-lg-6">
-                <div class="analysis-card h-100">
+                <div class="analysis-card">
 
                     <div class="analysis-icon">
                         <i class="bi bi-exclamation-triangle-fill"></i>
                     </div>
 
-                    <h5>
-                        Kendala Penyusunan Produk Pembelajaran
-                    </h5>
+                    <h5>Kendala Penyusunan Produk Pembelajaran</h5>
 
-                    <p>
-                        <strong>Konteks:</strong> Produk pembelajaran yang
-                        disusun meliputi modul ajar, LKPD, media pembelajaran,
-                        dan instrumen asesmen yang digunakan selama PPL
-                        Terbimbing pada mata pelajaran Informatika.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Konteks</span>
+                        <p class="mt-2 mb-0">
+                            Produk pembelajaran yang disusun meliputi modul ajar,
+                            LKPD, media pembelajaran, dan instrumen asesmen yang
+                            digunakan selama kegiatan PPL Terbimbing pada mata
+                            pelajaran Informatika.
+                        </p>
+                    </div>
 
-                    <p>
-                        <strong>Tujuan:</strong> Perangkat pembelajaran
-                        dirancang untuk membantu peserta didik mencapai tujuan
-                        pembelajaran secara efektif melalui aktivitas belajar
-                        yang terstruktur dan bermakna.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-success">Tujuan</span>
+                        <p class="mt-2 mb-0">
+                            Mengembangkan perangkat pembelajaran yang mampu
+                            memfasilitasi proses belajar secara terstruktur,
+                            bermakna, dan sesuai dengan kebutuhan peserta didik.
+                        </p>
+                    </div>
 
-                    <p>
-                        <strong>Kendala:</strong> Tantangan utama yang dihadapi
-                        adalah mengidentifikasi kebutuhan belajar peserta didik
-                        yang beragam, menyelaraskan aktivitas pembelajaran
-                        dengan tujuan pembelajaran, serta mengelola alokasi
-                        waktu agar seluruh kegiatan dapat terlaksana dengan
-                        optimal. Selain itu, penyusunan asesmen yang mampu
-                        mengukur ketercapaian tujuan pembelajaran secara akurat
-                        memerlukan proses perencanaan yang cukup kompleks.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-warning text-dark">Kendala</span>
+                        <ul class="mt-2">
+                            <li>Mengidentifikasi kebutuhan belajar peserta didik yang beragam.</li>
+                            <li>Menyelaraskan tujuan pembelajaran, aktivitas belajar, dan asesmen.</li>
+                            <li>Mengelola waktu pembelajaran agar seluruh kegiatan terlaksana secara optimal.</li>
+                            <li>Memilih media pembelajaran yang sesuai dengan karakteristik peserta didik dan fasilitas sekolah.</li>
+                        </ul>
+                    </div>
 
-                    <p>
-                        <strong>Refleksi dan Teori:</strong> Kendala tersebut
-                        menunjukkan pentingnya penerapan Pembelajaran
-                        Berdiferensiasi dan Teaching at the Right Level (TaRL)
-                        yang menekankan penyesuaian pembelajaran berdasarkan
-                        kebutuhan dan kesiapan belajar peserta didik. Hasil
-                        asesmen diagnostik menjadi dasar dalam menentukan
-                        strategi pembelajaran yang tepat.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-info text-dark">Kelebihan</span>
+                        <p class="mt-2 mb-0">
+                            Proses penyusunan perangkat mendorong guru untuk
+                            melakukan perencanaan yang lebih sistematis dan
+                            memahami kebutuhan belajar peserta didik secara lebih mendalam.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="badge bg-secondary">Kajian Teori</span>
+                        <p class="mt-2 mb-0">
+                            Analisis ini berkaitan dengan konsep Pembelajaran
+                            Berdiferensiasi dan Teaching at the Right Level (TaRL)
+                            yang menekankan pentingnya penyesuaian pembelajaran
+                            berdasarkan kesiapan dan kebutuhan belajar peserta didik.
+                        </p>
+                    </div>
 
                 </div>
             </div>
 
             <!-- CARD 2 -->
             <div class="col-lg-6">
-                <div class="analysis-card h-100">
+                <div class="analysis-card">
 
                     <div class="analysis-icon">
                         <i class="bi bi-book-half"></i>
                     </div>
 
-                    <h5>
-                        Teori dan Konsep Pedagogi yang Diadopsi
-                    </h5>
+                    <h5>Teori dan Konsep Pedagogi yang Diadopsi</h5>
 
-                    <p>
-                        <strong>Konteks:</strong> Penyusunan perangkat
-                        pembelajaran tidak hanya berorientasi pada penyampaian
-                        materi, tetapi juga pada proses bagaimana peserta didik
-                        membangun pengetahuan melalui pengalaman belajar.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Konteks</span>
+                        <p class="mt-2 mb-0">
+                            Penyusunan perangkat pembelajaran dilakukan dengan
+                            mempertimbangkan berbagai teori dan konsep pedagogi
+                            yang telah dipelajari selama perkuliahan PPG.
+                        </p>
+                    </div>
 
-                    <p>
-                        <strong>Tujuan:</strong> Menciptakan pembelajaran yang
-                        berpusat pada peserta didik, meningkatkan keterlibatan
-                        aktif, dan mengembangkan kompetensi berpikir kritis,
-                        kolaborasi, komunikasi, serta kreativitas.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-success">Tujuan</span>
+                        <p class="mt-2 mb-0">
+                            Menciptakan pembelajaran yang berpusat pada peserta
+                            didik dan mampu mengembangkan kompetensi abad ke-21.
+                        </p>
+                    </div>
 
-                    <p>
-                        <strong>Konsep Pedagogi:</strong> Perangkat pembelajaran
-                        dikembangkan berdasarkan prinsip Student-Centered
-                        Learning, teori konstruktivisme, pembelajaran aktif,
-                        pembelajaran berdiferensiasi, dan asesmen formatif.
-                        Peserta didik diberikan kesempatan untuk berdiskusi,
-                        mengeksplorasi, memecahkan masalah, serta merefleksikan
-                        hasil belajar mereka.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-warning text-dark">Konsep yang Digunakan</span>
+                        <ul class="mt-2">
+                            <li>Student-Centered Learning (SCL).</li>
+                            <li>Teori Konstruktivisme.</li>
+                            <li>Pembelajaran Berdiferensiasi.</li>
+                            <li>Teaching at the Right Level (TaRL).</li>
+                            <li>Asesmen Diagnostik dan Asesmen Formatif.</li>
+                        </ul>
+                    </div>
 
-                    <p>
-                        <strong>Refleksi dan Teori:</strong> Pendekatan ini
-                        selaras dengan Filosofi Pendidikan Indonesia yang
-                        menempatkan guru sebagai penuntun dalam proses belajar.
-                        Pembelajaran dirancang agar peserta didik dapat
-                        membangun pengetahuan secara mandiri sesuai kodrat,
-                        potensi, dan kebutuhannya.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-info text-dark">Kelebihan</span>
+                        <p class="mt-2 mb-0">
+                            Membantu peserta didik menjadi lebih aktif,
+                            meningkatkan keterlibatan dalam pembelajaran, dan
+                            memberikan pengalaman belajar yang lebih bermakna.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="badge bg-secondary">Kajian Teori</span>
+                        <p class="mt-2 mb-0">
+                            Konsep ini selaras dengan Filosofi Pendidikan
+                            Indonesia yang menempatkan guru sebagai penuntun
+                            serta memberikan ruang bagi peserta didik untuk
+                            berkembang sesuai kodrat dan potensinya.
+                        </p>
+                    </div>
 
                 </div>
             </div>
 
             <!-- CARD 3 -->
             <div class="col-lg-6">
-                <div class="analysis-card h-100">
+                <div class="analysis-card">
 
                     <div class="analysis-icon">
                         <i class="bi bi-award-fill"></i>
                     </div>
 
-                    <h5>
-                        Faktor Keberhasilan Penerapan Produk Pembelajaran
-                    </h5>
+                    <h5>Faktor Keberhasilan Penerapan Produk Pembelajaran</h5>
 
-                    <p>
-                        <strong>Konteks:</strong> Perangkat pembelajaran yang
-                        telah disusun diterapkan dalam kegiatan pembelajaran
-                        untuk mengetahui efektivitasnya dalam mencapai tujuan
-                        pembelajaran.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Konteks</span>
+                        <p class="mt-2 mb-0">
+                            Perangkat pembelajaran yang telah disusun kemudian
+                            diterapkan dalam proses pembelajaran untuk melihat
+                            efektivitasnya dalam mencapai tujuan pembelajaran.
+                        </p>
+                    </div>
 
-                    <p>
-                        <strong>Faktor Keberhasilan:</strong> Keberhasilan
-                        implementasi didukung oleh perencanaan yang sistematis,
-                        kesesuaian antara tujuan pembelajaran, aktivitas
-                        pembelajaran, dan asesmen, serta penggunaan media yang
-                        relevan dengan karakteristik peserta didik.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-success">Faktor Keberhasilan</span>
+                        <ul class="mt-2">
+                            <li>Perencanaan pembelajaran yang sistematis.</li>
+                            <li>Kesesuaian tujuan, aktivitas, dan asesmen.</li>
+                            <li>Penggunaan media pembelajaran yang relevan.</li>
+                            <li>Partisipasi aktif peserta didik selama pembelajaran.</li>
+                            <li>Pemberian umpan balik melalui asesmen formatif.</li>
+                        </ul>
+                    </div>
 
-                    <p>
-                        Partisipasi aktif peserta didik selama diskusi,
-                        praktik, dan presentasi juga menjadi faktor penting yang
-                        meningkatkan kualitas pembelajaran. Umpan balik yang
-                        diberikan melalui asesmen formatif membantu peserta
-                        didik memahami kekuatan dan aspek yang perlu
-                        diperbaiki.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-info text-dark">Kelebihan</span>
+                        <p class="mt-2 mb-0">
+                            Pembelajaran menjadi lebih terarah, peserta didik
+                            lebih terlibat dalam proses belajar, dan guru lebih
+                            mudah memantau ketercapaian tujuan pembelajaran.
+                        </p>
+                    </div>
 
-                    <p>
-                        <strong>Refleksi dan Teori:</strong> Faktor keberhasilan
-                        ini menunjukkan pentingnya constructive alignment,
-                        yaitu keselarasan antara tujuan pembelajaran, aktivitas,
-                        dan asesmen. Prinsip asesmen formatif juga berperan
-                        penting dalam mendukung pembelajaran yang berkelanjutan.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-danger">Kekurangan</span>
+                        <p class="mt-2 mb-0">
+                            Beberapa aktivitas masih memerlukan penyesuaian
+                            waktu agar seluruh rangkaian pembelajaran dapat
+                            terlaksana secara optimal.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="badge bg-secondary">Kajian Teori</span>
+                        <p class="mt-2 mb-0">
+                            Keberhasilan ini menunjukkan penerapan prinsip
+                            constructive alignment, yaitu keselarasan antara
+                            tujuan pembelajaran, aktivitas pembelajaran, dan
+                            asesmen yang digunakan.
+                        </p>
+                    </div>
 
                 </div>
             </div>
 
             <!-- CARD 4 -->
             <div class="col-lg-6">
-                <div class="analysis-card h-100">
+                <div class="analysis-card">
 
                     <div class="analysis-icon">
                         <i class="bi bi-arrow-repeat"></i>
                     </div>
 
-                    <h5>
-                        Penyesuaian pada Situasi Kelas yang Berbeda
-                    </h5>
+                    <h5>Penyesuaian pada Situasi Kelas yang Berbeda</h5>
 
-                    <p>
-                        <strong>Konteks:</strong> Setiap kelas memiliki
-                        karakteristik peserta didik, lingkungan belajar, dan
-                        fasilitas yang berbeda sehingga perangkat pembelajaran
-                        perlu bersifat fleksibel.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-primary">Konteks</span>
+                        <p class="mt-2 mb-0">
+                            Setiap kelas memiliki karakteristik peserta didik,
+                            lingkungan belajar, dan fasilitas yang berbeda,
+                            sehingga perangkat pembelajaran perlu bersifat fleksibel.
+                        </p>
+                    </div>
 
-                    <p>
-                        <strong>Penyesuaian yang Mungkin Dilakukan:</strong>
-                        Tingkat kesulitan tugas dapat dimodifikasi sesuai
-                        kemampuan peserta didik. Strategi pembelajaran dapat
-                        diubah dari kerja kelompok menjadi pembelajaran
-                        individual atau sebaliknya. Media pembelajaran juga
-                        dapat disesuaikan dengan ketersediaan sarana dan
-                        teknologi yang tersedia di sekolah.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-success">Tujuan Adaptasi</span>
+                        <p class="mt-2 mb-0">
+                            Menjamin bahwa tujuan pembelajaran tetap dapat
+                            tercapai meskipun diterapkan pada kondisi kelas yang berbeda.
+                        </p>
+                    </div>
 
-                    <p>
-                        Selain itu, bentuk asesmen dapat dimodifikasi menjadi
-                        proyek, presentasi, kuis, maupun penugasan individu
-                        sesuai kebutuhan dan kondisi kelas tanpa mengurangi
-                        pencapaian tujuan pembelajaran.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-warning text-dark">Komponen yang Dapat Disesuaikan</span>
+                        <ul class="mt-2">
+                            <li>Tingkat kompleksitas materi dan tugas.</li>
+                            <li>Strategi pembelajaran individual maupun kelompok.</li>
+                            <li>Media pembelajaran sesuai sarana yang tersedia.</li>
+                            <li>Bentuk asesmen seperti proyek, presentasi, kuis, atau penugasan.</li>
+                        </ul>
+                    </div>
 
-                    <p>
-                        <strong>Refleksi dan Teori:</strong> Adaptasi ini
-                        sejalan dengan prinsip pembelajaran berdiferensiasi dan
-                        pembelajaran adaptif yang menekankan pentingnya
-                        fleksibilitas dalam memenuhi kebutuhan belajar peserta
-                        didik yang beragam. Guru perlu menggunakan data hasil
-                        asesmen sebagai dasar pengambilan keputusan dalam
-                        melakukan penyesuaian pembelajaran.
-                    </p>
+                    <div class="mb-3">
+                        <span class="badge bg-info text-dark">Kelebihan</span>
+                        <p class="mt-2 mb-0">
+                            Memberikan fleksibilitas kepada guru untuk
+                            menyesuaikan pembelajaran dengan kebutuhan peserta didik.
+                        </p>
+                    </div>
+
+                    <div>
+                        <span class="badge bg-secondary">Kajian Teori</span>
+                        <p class="mt-2 mb-0">
+                            Adaptasi ini sejalan dengan prinsip Pembelajaran
+                            Berdiferensiasi dan pembelajaran adaptif yang
+                            menekankan pentingnya penggunaan data asesmen untuk
+                            mendukung pengambilan keputusan dalam pembelajaran.
+                        </p>
+                    </div>
 
                 </div>
             </div>
@@ -1447,8 +1544,6 @@
         </div>
 
     </div>
-
-    <br>
 
 </section>
 </main>
