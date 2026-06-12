@@ -40,7 +40,7 @@ footer{
 
     .navbar-brand span{
       color:white;
-      font-size:14px;
+      font-size:25px;
       font-weight:300;
       letter-spacing:1px;
     }
@@ -48,6 +48,7 @@ footer{
     .nav-link{
       color:white !important;
       font-weight:500;
+      font-size:30px;
       transition:0.3s;
     }
     .navbar-brand small{
